@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82F1C470-8230-4CF6-AAF1-43B32CD95DAD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Proiect</RootNamespace>
+    <AssemblyName>Proiect</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BazaDateDataSet.cs">
+      <DependentUpon>BazaDateDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BazaDateDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BazaDateDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BazaDateDataSetNew.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BazaDateDataSetNew.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Camere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Camere.Designer.cs">
+      <DependentUpon>Camere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clienti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clienti.Designer.cs">
+      <DependentUpon>Clienti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CamereNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CamereNew.Designer.cs">
+      <DependentUpon>CamereNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientiNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientiNew.Designer.cs">
+      <DependentUpon>ClientiNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContinutRezervari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContinutRezervari.Designer.cs">
+      <DependentUpon>ContinutRezervari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rezervari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rezervari.Designer.cs">
+      <DependentUpon>Rezervari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogInScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInScreen.Designer.cs">
+      <DependentUpon>LogInScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RezervariNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RezervariNew.Designer.cs">
+      <DependentUpon>RezervariNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VizualizareCamere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VizualizareCamere.Designer.cs">
+      <DependentUpon>VizualizareCamere.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Camere.resx">
+      <DependentUpon>Camere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clienti.resx">
+      <DependentUpon>Clienti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CamereNew.resx">
+      <DependentUpon>CamereNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientiNew.resx">
+      <DependentUpon>ClientiNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInScreen.resx">
+      <DependentUpon>LogInScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Rezervari.resx">
+      <DependentUpon>Rezervari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VizualizareCamere.resx">
+      <DependentUpon>VizualizareCamere.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BazaDateDataSet.xsc">
+      <DependentUpon>BazaDateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BazaDateDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BazaDateDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BazaDateDataSet.xss">
+      <DependentUpon>BazaDateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BazaDateDataSetNew.xsc">
+      <DependentUpon>BazaDateDataSetNew.xsd</DependentUpon>
+    </None>
+    <None Include="BazaDateDataSetNew.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BazaDateDataSetNew.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BazaDateDataSetNew.xss">
+      <DependentUpon>BazaDateDataSetNew.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
